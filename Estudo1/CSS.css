@@ -1,0 +1,92 @@
+*{ /* O   *  (asterisco) aplica os parametros a tudo*/
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 40px;
+
+}
+
+header nav ul{ /*Aqui ele fala que aquilo que esta denro de Header > dentro de nav e > dentro de ul vai receber as caracteristicas a seguir */
+    display: flex;/*Aqui ele fala que a lista ou o display dela sera flex ou flexivel*/
+    justify-content: flex-end ;
+    padding-right: 2%;
+
+    list-style: none;/* Essa função tira a bolinha da lista ou altera a marcação */
+}
+
+header nav ul li{
+    padding-left:3% ; /*Aqui ele fala que a distancia na esquerda ou o espaçamento entre os nomes recebe 5% */
+    
+}
+
+header a { /*como aqui não foi especificado detalhadamente qual função devera receber os parametros como nas funções acima, iso significa que toda função denominada <a> recebera os parametros a seguir*/
+    text-decoration: none; /*Aqui ele tira o sublinhado do cabeçalho ou do nome*/
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; /*Aqui ele define que a fonte deve ser bold*/
+    
+}
+
+section {
+    height: 45vh;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center; /*ele obedece o flex direction*/
+    flex-direction: row;
+}
+
+
+.countainer {
+    margin-top: 1% ;
+}
+
+.centralizar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.countainer img{ /*essa seção é referente a image*/
+    
+    height: 300px;
+    border-radius: 50%
+    0% 10% 50%; /*Note que cada parametro a mais que eu coloco influencia em uma aresta criando uma borda com curvatura diferente*/
+    
+}
+h2 {
+    margin-top: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: 2em italic;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.countainer p, ul { /*essa seção atribui caracteristicas ao <p> paragrafo e a <ul> lista*/
+    margin-top: 2%;
+    font-size: 1.3em;
+}
+
+footer {
+    line-height: 40px; /*essa seção é a do rodape*/
+    display: flex;
+    flex-direction: row ; /*Flex direction vai falar pro navegador de onde vai começar a colocar os componentes, o row fala que é da esqueda pra direita */
+    justify-content: center ; /*Aqui ele centraliza o texto no meio*/
+    align-items:start ; /*Aqui ele fala que o item esta alinhado com o começo*/
+    font-size: smaller; /*Aqui ele faz a fonte ser pequena (small)*/
+    height: 30px;
+}
+
+#introducao { /*Essa seção atribui cor de fundo ao cabeçalho*/
+    background-color: rgb(235, 202, 159);
+}
+
+#sobre { /*Essa seção atribui cor de fundo ao sobre*/
+    background-color: white;
+}
+#contato { /*Essa seção atribui cor de fundo ao contato*/
+    background-color: rgb(255, 213, 173);
+}
